@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/playerOneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Jugador 1" />
+
+    <EditText
+        android:id="@+id/playerTwoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Jugador 2" />
+
+    <RadioGroup
+        android:id="@+id/boardSizeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio3x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x3"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio4x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x4" />
+
+        <RadioButton
+            android:id="@+id/radio5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x5" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Juego" />
+
+</LinearLayout>
